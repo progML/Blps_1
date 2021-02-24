@@ -1,0 +1,12 @@
+BPMN - https://app.diagrams.net/#G1sFDWRT36Pau62BhHpWmAEbv3_j-7yV4E
+
+DDL - https://app.diagrams.net/#G1elt0MAuNCw9878DDFz0P-jBzUnozGCiB
+
+Подключение к бд: 
+s263120@helios.cs.ifmo.ru
+rtx655
+psql -h pg -d studs
+
+Проброс портов: ssh -L 9999:pg:5432 s263120@helios.cs.ifmo.ru -p 2222
+
+Хороший ResApi - https://docs.retailcrm.ru/Developers/API/APIVersions/APIv5

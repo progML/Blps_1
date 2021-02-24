@@ -1,0 +1,8 @@
+// Регистрация
+curl -s -f -d'{ "login": "test1", "password": "test1"}' -H "Content-Type: application/json" -X POST http://localhost:8080/register
+
+//Авторизация
+curl -s -f -H "Content-Type: application/json" -X POST -d'{ "login": "test", "password": "test"}' http://localhost:8080/auth
+
+//Просмотр страницы после авторизации(копируем токен)
+curl -s -f -H "Accept: application/json" -H "Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0IiwiZXhwIjoxNjE1NDk2NDAwfQ.uypy45-QwLegt968KmZlNCaIznSztVT-z5RGxxH3D711XotkRRSupn75HhvDUQMIIjhNhtvUurIt1j3C46dO9Q"  http://localhost:8080/user/get 
