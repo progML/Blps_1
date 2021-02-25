@@ -9,3 +9,4 @@ psql -h pg -d studs
 
 Проброс портов: ssh -L 9999:pg:5432 s263120@helios.cs.ifmo.ru -p 2222
 
+Хороший ResApi - https://docs.retailcrm.ru/Developers/API/APIVersions/APIv5
